@@ -1,11 +1,12 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item_article_card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/margin_default_quarter"
     android:clickable="true"
     android:focusable="true"
-    app:cardBackgroundColor="@color/colorPrimaryLight">
+    app:cardBackgroundColor="@color/colorPrimaryDark">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +32,7 @@
             android:paddingLeft="@dimen/margin_default"
             android:paddingRight="@dimen/margin_default"
             android:paddingTop="@dimen/margin_default"
-            android:textColor="@color/textColorPrimary" />
+            android:textColor="@color/textWhitePrimary" />
 
         <TextView
             android:id="@+id/article_subtitle"
@@ -43,6 +44,6 @@
             android:paddingBottom="@dimen/margin_default"
             android:paddingLeft="@dimen/margin_default"
             android:paddingRight="@dimen/margin_default"
-            android:textColor="@color/textColorSecondary" />
+            android:textColor="@color/textWhiteSecondary" />
     </LinearLayout>
 </android.support.v7.widget.CardView>
