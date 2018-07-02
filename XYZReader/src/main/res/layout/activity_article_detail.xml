@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:fitsSystemWindows="true"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="@dimen/appbar_elevation">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/activity_article_detail_collapsing_toolbar"
@@ -54,10 +55,12 @@
         android:id="@+id/activity_article_detail_fab_share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_default"
+        android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/ic_share"
+        app:elevation="@dimen/fab_elevation"
         app:fabSize="normal"
         app:layout_anchor="@id/activity_article_detail_nested_scroll_view"
-        app:layout_anchorGravity="bottom|end" />
+        app:layout_anchorGravity="bottom|end"
+        app:pressedTranslationZ="@dimen/fab_press_translation_z" />
 
 </android.support.design.widget.CoordinatorLayout>
